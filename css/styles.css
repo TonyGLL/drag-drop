@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    background: url(../img/1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+.screen1{
+    width: 100%;
+}
+
+.screen1 .title{
+    color: white;
+    height: 60px;
+    text-align: center;
+    background: #000;
+}
+
+.init{
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    width: 150px;
+    color: white;
+    background: #634627;
+    transition: all ease 0.3s;
+}
+
+.init:hover{
+    color: #634627;
+    background: white;
+}
+
+.screen2{
+    margin-top: 100vh;
+    height: 100vh;
+    display: none;
+}
+
+.go-top #top{
+    color: black;
+    font-size: 32px;
+    padding-left: 20px;
+    padding-top: 20px;
+    transition: ease all 0.3s;
+}
+
+.rules{
+    text-align: center;
+}
+
+.text{
+    color: #000;
+}
+
+
+#droppable { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px; 
+    height: 500px;  
+    border: none; 
+}
+
+#draggable1, #draggable2, #draggable3{ 
+    width: 150px; 
+    height: 150px; 
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(221, 132, 72);
+    cursor: pointer;
+}
+
+#draggable p{
+    font-size: 24px;
+    color: white;
+}
+
+.reset{
+    position: absolute;
+    left: 1300px;
+    top: 1420px;
+    width: 150px;
+    font-size: 20px;
+}
+
+.modal{
+    background: #ccc;
+}
+
+.modal .content{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 1000px;
+    height: 800px;
+    padding: 10px;
+    background: #000;
+}
+
+.modal .content img{
+    float: left;
+    width: 500px;
+    padding-top: 100px;
+}
+
+.modal .content p{
+    color: white;
+    float: right;
+    width: 400px;
+    height: 600px;
+    overflow: scroll;
+}
+
+#cerrar-modal{
+    background: #000;
+    display: block;
+    height: 30px;
+    color: white;
+    text-align: right;
+    text-decoration: none;
+}
+
+#cerrar-modal span{
+    background: white;
+    padding: 8px;
+    width: 50px;
+    color: black;
+}
+
+#cerrar-modal span:hover{
+    background: red;
+}
